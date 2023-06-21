@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>LABORATORIO</title>
+    <style type="text/css">
+        #background {
+            position: absolute;
+            width: 99%;
+            height: 130%;
+        }
+
+        #fixed {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .contenedor {
+            text-align: center;
+            padding-left: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="background" src="/Imagenes/fondo.jpg" />
+    </div>
+    <div id="fixed">
+        </br></br></br>
+        <div style="padding-left:510px;">
+            <img src="/Imagenes/selloespe.jpg" alt="ESPE" height="100">
+        </div>
+        <div class="contenedor">
+            <h2>Pregunta 2</h2>
+            <p>Analizar una cadena de texto en un objeto DOM XML y extraer esa informacion con JavaScript</p>
+            <p>Cadena de texto:</p>
+            <p>* Celular marca Samsumg modelo A30 estado nuevo</p>
+            <p>* Celular marca Iphone modelo XII estado Usado</p>
+            <p>La cadena de texto muestra marca, modelo y estado dentro de una tienda de celulares</p>
+            <button  onclick="obtenerDatos()">Obtener Datos</button>
+        <div id="resultado"></div>
+        </div>
+
+        
+
+        
+            
+
+
+
+    </div>
+</body>
+<script>
+    function obtenerDatos() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET", "animales.xml", false);
+      xmlhttp.send();
+      var xmlDoc = xmlhttp.responseXML;
+    
+      var etiquetaPrincipal = xmlDoc.documentElement.tagName;
+      var animales = xmlDoc.getElementsByTagName(etiquetaPrincipal)[0].childNodes;
+      var resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.innerHTML = ""; // Limpiar el contenido anterior
+    
+      for (var i = 0; i < animales.length; i++) {
+        if (animales[i].nodeType === 1) {
+          var tipoAnimal = animales[i].tagName;
+          var nombre = animales[i].getElementsByTagName("nombre")[0].textContent;
+          var comida = animales[i].getElementsByTagName("comida")[0].textContent;
+    
+          var textoResultado = document.createElement("p");
+          textoResultado.textContent = "Los " + etiquetaPrincipal + " " + tipoAnimal + " " + nombre + " comen " + comida;
+    
+          resultadoDiv.appendChild(textoResultado);
+        }
+      }
+    }
+    </script>
+
+</html>

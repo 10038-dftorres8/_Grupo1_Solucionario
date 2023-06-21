@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<animales>
+    <mamiferos>
+        <id>A01<id>
+        <nombre>El Panda</nombre>
+        <comida>Bambu</comida>
+    </mamiferos>
+    <mamiferos>
+        <id>A02<id>
+        <nombre>El Tigre</nombre>
+        <comida>Carne</comida>
+    </mamiferos>
+    <mamiferos>
+        <id>A03<id>
+        <nombre>El Delfin</nombre>
+        <comida>Bacalao</comida>
+    </mamiferos>
+    <mamiferos>
+        <id>A04<id>
+        <nombre>El Elefante</nombre>
+        <comida>Mani</comida>
+    </mamiferos>
+    <reptiles>
+        <id>A05<id>
+        <nombre>La Tortuga</nombre>
+        <comida>Algas Marinas</comida>
+    </reptiles>
+    <reptiles>
+        <id>A06<id>
+        <nombre>El Cocodrilo</nombre>
+        <comida>Carne</comida>
+    </reptiles>
+    <aves>
+        <id>A07<id>
+        <nombre>El Perico</nombre>
+        <comida>Diente de Leon</comida>
+    </aves>
+    <aves>
+        <id>A08<id>
+        <nombre>La Paloma</nombre>
+        <comida>Insectos</comida>
+    </aves>
+    <aves>
+        <id>A09<id>
+        <nombre>El Colibri</nombre>
+        <comida>Nectar</comida>
+    </aves>
+    <insectos>
+        <id>A10<id>
+        <nombre>La Mariposa</nombre>
+        <comida>Nectar</comida>
+    </insectos>
+</animales>
+    

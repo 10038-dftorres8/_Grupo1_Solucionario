@@ -1,0 +1,28 @@
+{
+    "peliculas": [
+      {
+        "Genero": "Terror",
+        "Nombre": "Anabelle",
+        "Protagonista": "Mia Form"
+      },
+  
+      {
+        "Genero": "Drama",
+        "Nombre": "Cada día",
+        "Protagonista": "Rihannon Rice"
+      },
+      {
+        "Genero": "Comedia",
+        "Nombre": "Son como niños",
+        "Protagonista": "Adam Sandler"
+      },
+
+      {
+        "Genero": "Accion",
+        "Nombre": "Mision Rescate ",
+        "Protagonista": "Chris Hemsworth"
+      }
+  
+    ]
+  }
+  
